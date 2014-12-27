@@ -1,0 +1,12 @@
+// Global Variabls
+
+$global-spacing: 1.618em;
+$global-font-size: 16px;
+
+// Global Mixins
+
+// Common Functions
+
+@function em($px-val, $base-val: 16px) {
+  @return $px-val / $base-val * 1em;
+}
