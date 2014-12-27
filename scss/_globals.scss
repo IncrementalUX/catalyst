@@ -3,10 +3,17 @@
 $global-spacing: 1.618em;
 $global-font-size: 16px;
 
+$z-values: (pit, base, dropdown, overlay, modal, superman);
+
 // Global Mixins
 
-// Common Functions
 
+// Common Functions
+// Px to em conversion
 @function em($px-val, $base-val: 16px) {
   @return $px-val / $base-val * 1em;
+}
+// z-index calculation
+@function z($z-level) {
+  @return index($z-values, $z-level);
 }
